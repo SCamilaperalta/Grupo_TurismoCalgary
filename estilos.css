@@ -1,0 +1,543 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-weight: 400px;
+}
+.icono {
+    margin: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+}
+.wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+}
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos para la barra de navegación */
+.pages1 {
+    background-color: rgb(243, 240, 240);
+    list-style-type: none;
+    height: 28px;
+    padding: 15px;
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.pages2 {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.pages1 .pages2 .pages3{
+    color: rgb(246, 12, 12);
+    text-decoration: none;
+    padding: 5px 10px; /* Añade espacio alrededor del texto */
+    text-align: center;
+}
+
+.pages3 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
+.pages1 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
+.pages2 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
+/*INICIO*/
+.main1{
+    background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(img/auroras\ boreales.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main1-titulo{
+width: 100%;
+color: white;
+text-align: center;
+font-size: 60px;
+
+}
+
+.main1-texto {
+color: white;
+text-align: center;
+width: 80%;
+font-size: 20px;
+margin: top 30px;
+}
+
+.texto {
+    width: 80%;
+    margin: 10px auto;
+}
+/**estilos turismo**/ 
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal; 
+    font-size: 16px; /*  tamaño de fuente deseado */
+    text-align: center;
+}
+h2 { margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.image-container {
+    display: flex; /* Contenedor flexible */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    gap: 10px; /* Espacio entre las imágenes */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+}
+
+.image-container img {
+    width: calc(33.33% - 10px); /* Ancho de cada imagen (1/3 de la fila) */
+    height: auto; /* Altura automática */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+
+h4 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*contactos formulario*/
+
+.contenedor{
+    display: flex; 
+    background-image: url(img/tower2.jpg);
+    
+}
+
+
+.iconos{
+    display: flex;
+    margin-top: 10px;
+    padding-right: 650px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-register{
+    width: 400px;
+    background: #fdfdfdaf;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgba(0, 0, 0, 0.911);
+    box-shadow: 7px 13px 37px #000;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background: #f1d3d3c9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.botons{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/*Imagenes de la pag contactos*/
+.image-contac {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 20px auto;
+}
+/*Estilos pagina de  visita canada*/ 
+.parrafo  {
+    font-weight: 400;
+    font-size: 2vw; /* Escala según el ancho de la ventana */
+    text-decoration: underline;
+}
+.parrafos {
+    font-weight: 500; 
+    line-height: 1.5;
+}
+.titulos {
+    text-align: center; /* Centra horizontalmente */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 30px;
+    font-size: 3vw; /* Escala según el ancho de la ventana */
+    margin-top: 30px;
+}
+.container {
+    width: 100%;
+
+}
+.imgvc {
+    width: 30%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #26374a; padding: 10px;
+    margin-bottom: 25px;
+}
+.visita {
+    display: flex; /* Crea un contenedor flexible */
+    align-items: center; /* Centra verticalmente */
+}
+.titulo2{
+    text-align: left; /* Alinea el título a la izquierda */
+    font-size: 2vw;
+}
+
+.parrafo1 {
+    flex: 1; /* Ocupa el espacio restante */
+    line-height: 1.5;
+    background-color: #f9babab0; padding: 5px;
+}
+.visitacad  {
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    display: block; /* Evita que la imagen afecte al flujo del texto */
+    background-color: #26374a;
+    padding: 5px;
+    margin-left: auto; /* Alinea la imagen a la derecha */
+    margin-top: 30px;
+}
+.visita2 {
+    display: flex; /* Crea un contenedor flexible */
+    align-items: center; /* Centra verticalmente */
+}
+.titulo3 {
+    text-align: left; /* Alinea el título a la derecha */
+    font-size: 2vw;
+}
+
+.visitacad2 {
+    max-width: 30%; /* Ajusta el tamaño de la imagen */
+    display: block; /* Evita que la imagen afecte al flujo del texto */
+    background-color: #26374a;
+    padding: 5px;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+/*album de fotos*/ 
+.album-fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.slider{
+    height: 400px;
+    margin: 60px auto;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(550px * 12);
+    animation: scroll 30s linear infinite;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-550px * 6));
+    }
+}
+
+.slide{
+    height: 300px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    padding: 55px;
+    perspective: 100px;
+}
+
+.slider img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.slider img:hover{
+    transform: translateZ(20px);
+}
+/*VIDEO*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* contenedor*/
+}
+.video-container iframe {
+    width: 40%; /* Tamaño */
+    height: 80%;
+}
+.lugares {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.lugares li{
+    margin: 10px;
+}
+
+/*css de EVENTOS*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #ecebffcb;
+}
+/* cuadro de fotos eventos y turismo*/ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.grid-item {
+    border: 1px solid #464545;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 30rem);
+    grid-gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+/*cartles de turismo*/ 
+.clima {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 18%;
+    background-color:#a49abb84 ;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h3, .card h5 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 90%;
+    height: 64%;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.letras {
+    color: #090909;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #e6e7e9;
+    width: 80%;
+}
+
+.card-img {
+    width: 60%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-texto {
+    width: 40%;
+    margin: 10px;
+}
+
+.card-texto p{
+    font-weight: normal;
+}
+
+.card-texto h5 {
+    margin: 0;
+}
+/*=========================FOOTER================================*/
+
+
+.iconos  {
+    font-size: 15px;
+    padding: 0 9px;
+    color:#f3f3f3;
+}
+/*.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}*/
+.align-self-end {
+    height: 40px;
+    width: auto;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+    }
+    .footer {
+        background-color: #26374a;
+        color: beige;
+        padding: 2rem 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .footer .link ul li a {
+        color: rgb(245, 245, 245);
+        padding: 0.5rem 0;
+        display: block;
+    }
+    
+    .footer .link ul li a:hover {
+        color: #c8c1c2;
+    }
