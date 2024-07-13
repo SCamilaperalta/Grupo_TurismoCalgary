@@ -6,19 +6,59 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     font-weight: 400px;
+    margin: 0;
+}
+nav{
+    display: block;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(img/simbol.png);
 }
 .icono {
     margin: 20px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2, h3, h4,h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
+/* Estilos para la barra de navegación */
+.pages1 {
+    list-style-type: none;
+    height: 28px;
+    padding: 15px;
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.pages2 {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+} 
+
+.pages1 .pages2 .pages3{
+    color: rgb(227, 224, 224);
+    text-decoration: none;
+    padding: 5px 10px; /* Añade espacio alrededor del texto */
+    text-align: center;
+}
+
+.pages3 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
+.pages1 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
+.pages2 a:hover {
+    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
+}
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
 @media (max-width:1200px){
-    #intro, #equipo {
+    .navpages1, #equipo {
         width:90% !important;
         margin:auto;
     }
@@ -34,88 +74,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
+    @media (max-width:700px) {
+        .pages1,.pages2 , .pages3, .main1 {
+            flex-direction: column;
+            padding: 0%;
+        }
+        }
+    nav, .main1  {
+        padding: 10px 0px;
+    }
+        
+        .texto, p, .parrafo, .parrafo1, .parrafos{
+        font-size: 12px;
+        
+        padding: 10px 0px;
+        }
+        
+        .titulos, .titulo2, .titulo3 {
+            font-size: 20px;
+        }
+        
 
-@media (max-width:768px) {
-
-    #intro, #equipo{
-        width:90% !important;
-        margin:auto;
-    }
-
-    
-    #img-equipo{
-        max-height:20rem !important;
-        width:90%;
-    }
-    .wrapper-local {
-        width:90%;
-        margin:auto;
-        padding-top:50px;    
-    }
-    #local {
-        flex-wrap: wrap;
-    }
-    .mapa img {
-        width:100%;
-        height:auto;
-    }
     #bg-contactos{
         top: -120px;
     }
 
 
-}
+
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
 @media (max-width: 576px) {
-    #servicios-fila-2 {
-        width:100% !important;
-    }
     #servicios-fila-1 {
         width:100% !important;
     }
-
-    .icono-wrap{
-        flex-wrap:wrap !important;
-        justify-content: center !important;
-        text-align: center;
+.titulo2, .titulo3, .titulos,.parrafo, .parrafo1, .parrafos{
+    font-size: 20px;
+}
+.textos{
+    font-size: 15px;
+}
+.pages1, .pages2, .pages3{
+        flex-direction:column;
+        
     }
 }
 
 
-
-/* Estilos para la barra de navegación */
-.pages1 {
-    background-color: rgb(243, 240, 240);
-    list-style-type: none;
-    height: 28px;
-    padding: 15px;
-    text-align: center; 
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-}
-
-.pages2 {
-    display: inline-block;
-    margin-right: 20px; /* Espacio entre elementos */
-}
-
-.pages1 .pages2 .pages3{
-    color: rgb(246, 12, 12);
-    text-decoration: none;
-    padding: 5px 10px; /* Añade espacio alrededor del texto */
-    text-align: center;
-}
-
-.pages3 a:hover {
-    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
-}
-.pages1 a:hover {
-    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
-}
-.pages2 a:hover {
-    background-color: rgba(233, 146, 146, 0.74); /* Cambia el color de fondo al pasar el cursor */
-}
 /*INICIO*/
 .main1{
     background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(img/auroras\ boreales.jpg);
@@ -150,32 +154,35 @@ margin: top 30px;
 .texto {
     width: 80%;
     margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.5;
 }
 /**estilos turismo**/ 
 p {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: normal; 
-    font-size: 16px; /*  tamaño de fuente deseado */
-    text-align: center;
+    font-size: 16px; 
+    letter-spacing: 1px; 
+
 }
 h2 { margin-top: 20px;
     margin-bottom: 20px;
 
 }
 .image-container {
-    display: flex; /* Contenedor flexible */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas */
-    justify-content: center; /* Centra horizontalmente las imágenes */
-    gap: 10px; /* Espacio entre las imágenes */
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    max-width: 800px; 
+    margin: 20px auto; /
 }
 
 .image-container img {
-    width: calc(33.33% - 10px); /* Ancho de cada imagen (1/3 de la fila) */
-    height: auto; /* Altura automática */
-    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    width: calc(33.33% - 10px); 
+    height: auto; 
+    object-fit: cover; 
 }
 
 
@@ -184,7 +191,13 @@ h4 {
     text-align: center;
     font-size: 40px;
 }
-
+ul {
+    text-align: justify;
+    font-size: 16px;
+    padding-top: 0%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
 /*contactos formulario*/
 
 .contenedor{
@@ -209,7 +222,7 @@ h4 {
     margin: auto;
     margin-top: 50px;
     border-radius: 4px;
-    font-family: 'calibri';
+    font-family: 'Montserrat';
     color: rgba(0, 0, 0, 0.911);
     box-shadow: 7px 13px 37px #000;
 }
@@ -224,7 +237,7 @@ h4 {
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #ffffff;
-    font-family: 'calibri';
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 .form-register p{
@@ -243,28 +256,29 @@ h4 {
 
 /*Imagenes de la pag contactos*/
 .image-contac {
-    display: flex; /* Contenedor flexible */
-    justify-content: center; /* Centra horizontalmente las imágenes */
-    align-items: center; /* Centra verticalmente las imágenes */
-    gap: 20px; /* Espacio entre las imágenes */
-    max-width: 1000px; /* Ancho máximo del contenedor */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 1000px; 
     margin: 20px auto;
 }
 /*Estilos pagina de  visita canada*/ 
 .parrafo  {
     font-weight: 400;
-    font-size: 2vw; /* Escala según el ancho de la ventana */
+    font-size: 2vw; 
     text-decoration: underline;
 }
-.parrafos {
+.parrafos, h3 {
     font-weight: 500; 
     line-height: 1.5;
+    font-size: 18px;
 }
 .titulos {
-    text-align: center; /* Centra horizontalmente */
-    font-weight: bold; /* Letra en negrita */
+    text-align: center; 
+    font-weight: bold; 
     margin-bottom: 30px;
-    font-size: 3vw; /* Escala según el ancho de la ventana */
+    font-size: 3vw; 
     margin-top: 30px;
 }
 .container {
@@ -283,11 +297,11 @@ h4 {
     margin-bottom: 25px;
 }
 .visita {
-    display: flex; /* Crea un contenedor flexible */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    align-items: center; 
 }
 .titulo2{
-    text-align: left; /* Alinea el título a la izquierda */
+    text-align: left; 
     font-size: 2vw;
 }
 
@@ -295,6 +309,14 @@ h4 {
     flex: 1; /* Ocupa el espacio restante */
     line-height: 1.5;
     background-color: #f9babab0; padding: 5px;
+    font-size: 16px;
+}
+.subtitulos {
+    flex: 1; /* Ocupa el espacio restante */
+    line-height: 1.5;
+    background-color: #314052; padding: 5px;
+    font-size: 20px;
+    color: #ddd;
 }
 .visitacad  {
     max-width: 100%; /* Ajusta el tamaño de la imagen */
@@ -305,17 +327,17 @@ h4 {
     margin-top: 30px;
 }
 .visita2 {
-    display: flex; /* Crea un contenedor flexible */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    align-items: center; 
 }
 .titulo3 {
-    text-align: left; /* Alinea el título a la derecha */
+    text-align: left; 
     font-size: 2vw;
 }
 
 .visitacad2 {
-    max-width: 30%; /* Ajusta el tamaño de la imagen */
-    display: block; /* Evita que la imagen afecte al flujo del texto */
+    max-width: 30%; 
+    display: block; 
     background-color: #26374a;
     padding: 5px;
     margin-left: auto;
